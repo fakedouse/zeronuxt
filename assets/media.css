@@ -1,0 +1,23 @@
+@media screen and (min-width:1000px) and (max-width:1400px) {
+  .grid-posts {
+    grid-template-columns: 2fr 5fr 1fr;
+  }
+}
+
+@media screen and (min-width:605px) and (max-width:1000px) {
+  .grid-posts {
+    grid-template-columns: 1fr 3fr;
+  }
+}
+
+@media screen and (max-width:605px) {
+  .grid-posts {
+    grid-template-columns: auto;
+  }
+}
+
+@media screen and (orientation:portrait) {
+  .grid-backbone {
+    background: red;
+  }
+}
