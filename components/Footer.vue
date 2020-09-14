@@ -18,38 +18,38 @@
 import Socials from '~/components/Socials.vue'
 import Logo from '~/components/Logo.vue'
 export default {
-  components: {
-    Socials,
-    Logo
-  },
-  data() {
-    return {
-      logo: {
-        src: 'avahero.jpg'
-      }
+    components: {
+        Socials,
+        Logo
+    },
+    data() {
+        return {
+            logo: {
+                src: 'avahero.jpg'
+            }
+        }
     }
-  }
 }
 </script>
 
 <style lang="scss">
 footer {
-  grid-template-columns: 1fr 2fr 1fr;
-  grid:
-    [row1-start] 'logo nav contacts' [row1-end]
-    [row2-start] 'socials socials contacts' [row2-end];
+    grid-template-columns: 1fr 2fr 1fr;
+    grid:
+        [row1-start] 'logo nav contacts' [row1-end]
+        [row2-start] 'socials socials contacts' [row2-end];
 }
 .logo {
-  grid-area: logo;
+    grid-area: logo;
 }
 .nav {
-  grid-area: nav;
+    grid-area: nav;
 }
 .contacts {
-  grid-area: contacts;
+    grid-area: contacts;
 }
 .socials {
-  grid-area: socials;
-  padding: 0 30px;
+    grid-area: socials;
+    padding: 0 30px;
 }
 </style>

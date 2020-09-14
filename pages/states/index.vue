@@ -41,74 +41,75 @@ import Menu from '~/components/menu/Menu.vue'
 import Post from '~/components/Post.vue'
 
 const db = {
-  posts: [
-    {
-      id: 'sfefs',
-      title: 'Упредительный ядерный удар выпущен. Итоги',
-      paragraph: 'Lorem ipsum dolor set amet...'
-    },
-    {
-      id: 'fbcfbfs',
-      title: 'Что нас ждет при нападении рептилий. Реальность без прикрас',
-      paragraph:
-        'Lorem ipsum dolor set amet. Quos perspiciatis magnam voluptatibus! Distinctio quo perferendis maxime incidunt tenetur...'
-    },
-    {
-      id: 'fnfgh',
-      title: 'Катаклизмы связанные с активностью на Нибиру',
-      paragraph:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit corrupti sed nobis voluptate officiis sapiente explicabo minima voluptas totam vitae. Quos perspiciatis magnam voluptatibus! Distinctio quo perferendis maxime incidunt tenetur...ййц'
-    },
-    {
-      id: 'fgdhmggj',
-      title: 'Пророчество расшифровано. Сказано как победить рептилий',
-      paragraph:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit corrupti sed nobis voluptate officiis sapiente explicabo minima voluptas totam vitae. Quos perspiciatis magnam voluptatibus! Distinctio quo perferendis maxime incidunt tenetur...'
-    },
-    {
-      id: 'hiulibk',
-      title: 'На нибиру зафиксирована новая активность!',
-      paragraph: 'Lorem ipsum dolor set amet...'
-    }
-  ]
+    posts: [
+        {
+            id: 'sfefs',
+            title: 'Упредительный ядерный удар выпущен. Итоги',
+            paragraph: 'Lorem ipsum dolor set amet...'
+        },
+        {
+            id: 'fbcfbfs',
+            title:
+                'Что нас ждет при нападении рептилий. Реальность без прикрас',
+            paragraph:
+                'Lorem ipsum dolor set amet. Quos perspiciatis magnam voluptatibus! Distinctio quo perferendis maxime incidunt tenetur...'
+        },
+        {
+            id: 'fnfgh',
+            title: 'Катаклизмы связанные с активностью на Нибиру',
+            paragraph:
+                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit corrupti sed nobis voluptate officiis sapiente explicabo minima voluptas totam vitae. Quos perspiciatis magnam voluptatibus! Distinctio quo perferendis maxime incidunt tenetur...ййц'
+        },
+        {
+            id: 'fgdhmggj',
+            title: 'Пророчество расшифровано. Сказано как победить рептилий',
+            paragraph:
+                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit corrupti sed nobis voluptate officiis sapiente explicabo minima voluptas totam vitae. Quos perspiciatis magnam voluptatibus! Distinctio quo perferendis maxime incidunt tenetur...'
+        },
+        {
+            id: 'hiulibk',
+            title: 'На нибиру зафиксирована новая активность!',
+            paragraph: 'Lorem ipsum dolor set amet...'
+        }
+    ]
 }
 
 export default {
-  components: {
-    Header,
-    Footer,
-    Menu,
-    Post
-  },
-  data() {
-    return {
-      posts: db.posts,
-      logo: {
-        src: 'avahero.jpg',
-        name: 'Ivan Peshkov',
-        desc: 'The Author of this App'
-      }
+    components: {
+        Header,
+        Footer,
+        Menu,
+        Post
+    },
+    data() {
+        return {
+            posts: db.posts,
+            logo: {
+                src: 'avahero.jpg',
+                name: 'Ivan Peshkov',
+                desc: 'The Author of this App'
+            }
+        }
+    },
+    computed: {
+        postTitleLinks() {
+            const posts = this.posts
+            const arr = []
+            for (const post of posts) {
+                post.id = post.id + 'l'
+                post.href = `#${post.id}`
+                post.value = post.title
+                arr.push(post)
+            }
+            return arr
+        }
     }
-  },
-  computed: {
-    postTitleLinks() {
-      const posts = this.posts
-      const arr = []
-      for (const post of posts) {
-        post.id = post.id + 'l'
-        post.href = `#${post.id}`
-        post.value = post.title
-        arr.push(post)
-      }
-      return arr
-    }
-  }
 }
 </script>
 
 <style lang="scss">
 #adb_id32794874 {
-  height: 200px;
-  font-size: 20px;
+    height: 200px;
+    font-size: 20px;
 }
 </style>

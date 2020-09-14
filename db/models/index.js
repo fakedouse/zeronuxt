@@ -1,3 +1,3 @@
 export default (entity) => {
-  const models = []
+    const models = []
 }

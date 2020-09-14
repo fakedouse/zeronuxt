@@ -17,26 +17,26 @@ import Post from '~/components/Post.vue'
 import LeftSidebar from '~/components/LeftSidebar.vue'
 
 export default {
-  components: {
-    Header,
-    LeftSidebar,
-    Post
-  },
-  data() {
-    return {
-      logo: {
-        src: '/avahero.jpg',
-        name: 'Ivan Peshkov',
-        desc: 'The Author of this App'
-      },
-      posts: [
-        {
-          id: 'sfefs',
-          title: 'Упредительный ядерный удар выпущен. Итоги',
-          paragraph: 'Lorem ipsum dolor set amet...'
+    components: {
+        Header,
+        LeftSidebar,
+        Post
+    },
+    data() {
+        return {
+            logo: {
+                src: '/avahero.jpg',
+                name: 'Ivan Peshkov',
+                desc: 'The Author of this App'
+            },
+            posts: [
+                {
+                    id: 'sfefs',
+                    title: 'Упредительный ядерный удар выпущен. Итоги',
+                    paragraph: 'Lorem ipsum dolor set amet...'
+                }
+            ]
         }
-      ]
     }
-  }
 }
 </script>

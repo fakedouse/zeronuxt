@@ -24,42 +24,42 @@
 
 <style lang="scss">
 .lenta {
-  grid-gap: 10px;
-  grid:
-    [row1-start] 'header header header header' [row1-end]
-    [row2-start] 'states states states similar' [row2-end]
-    [row3-start] 'conclusion conclusion conclusion similar' [row3-end]
-    [row4-start] 'comments comments comments similar' [row4-end];
+    grid-gap: 10px;
+    grid:
+        [row1-start] 'header header header header' [row1-end]
+        [row2-start] 'states states states similar' [row2-end]
+        [row3-start] 'conclusion conclusion conclusion similar' [row3-end]
+        [row4-start] 'comments comments comments similar' [row4-end];
 }
 
 .header {
-  grid-area: header;
+    grid-area: header;
 }
 
 .states {
-  grid-area: states;
+    grid-area: states;
 }
 
 .similar {
-  grid-area: similar;
+    grid-area: similar;
 }
 
 .conclusion {
-  grid-area: conclusion;
+    grid-area: conclusion;
 }
 
 .comments {
-  grid-area: comments;
+    grid-area: comments;
 }
 </style>
 
 <script>
 export default {
-  props: {
-    previews: {
-      type: Array,
-      required: true
+    props: {
+        previews: {
+            type: Array,
+            required: true
+        }
     }
-  }
 }
 </script>

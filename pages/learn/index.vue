@@ -6,32 +6,32 @@
 import Preview from '~/components/Preview.vue'
 
 export default {
-  components: {
-    Preview
-  },
-  data() {
-    return {
-      title: 'Учебник',
-      subtitle: 'Здесь собрана теория',
-      pages: [
-        {
-          id: 'fsv',
-          href: '/books',
-          name: 'Книги'
-        },
-        {
-          id: 'fsczdcv',
-          href: '/Lectorys',
-          name: 'Лекции'
-        },
-        {
-          id: 'fsv',
-          href: '/spravochnik',
-          name: 'Справочники'
+    components: {
+        Preview
+    },
+    data() {
+        return {
+            title: 'Учебник',
+            subtitle: 'Здесь собрана теория',
+            pages: [
+                {
+                    id: 'fsv',
+                    href: '/books',
+                    name: 'Книги'
+                },
+                {
+                    id: 'fsczdcv',
+                    href: '/Lectorys',
+                    name: 'Лекции'
+                },
+                {
+                    id: 'fsv',
+                    href: '/spravochnik',
+                    name: 'Справочники'
+                }
+            ]
         }
-      ]
     }
-  }
 }
 </script>
 

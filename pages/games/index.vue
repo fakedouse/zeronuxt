@@ -6,32 +6,32 @@
 import Preview from '~/components/Preview.vue'
 
 export default {
-  components: {
-    Preview
-  },
-  data() {
-    return {
-      title: 'Games',
-      subtitle: 'Играй, играй',
-      pages: [
-        {
-          id: 'sfee',
-          href: '/starpath',
-          name: 'StarPath'
-        },
-        {
-          id: 'fbcfvx',
-          href: '/battlepath',
-          name: 'BattlePath'
-        },
-        {
-          id: 'fsv',
-          href: '/trivial',
-          name: 'Trivial'
+    components: {
+        Preview
+    },
+    data() {
+        return {
+            title: 'Games',
+            subtitle: 'Играй, играй',
+            pages: [
+                {
+                    id: 'sfee',
+                    href: '/starpath',
+                    name: 'StarPath'
+                },
+                {
+                    id: 'fbcfvx',
+                    href: '/battlepath',
+                    name: 'BattlePath'
+                },
+                {
+                    id: 'fsv',
+                    href: '/trivial',
+                    name: 'Trivial'
+                }
+            ]
         }
-      ]
     }
-  }
 }
 </script>
 
